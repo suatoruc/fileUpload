@@ -2,7 +2,7 @@
 # Selenium 4.6 versiyonu ile gelen **WebDriver Manager** kullanımı,
 
 >- Driver class'ında yazdığımız kod sayısını azaltacak ve bu nedenle aldıgımız hataları 
-kaldıracak bir entegrasyon olan webdriver manager uygulaması ile ilgili örnek küçük bir uygulama yazıldı
+azaltacak bir entegrasyon olan webdriver manager uygulaması ile ilgili örnek küçük bir uygulama yazıldı
 >- Çalıştıgımız class yapısında bu özelligi kullanabilmek için pom.xml yapısı içinde küçük bir modifikasyon satırı 
 eklememiz gerekli arkadaşlar
    
