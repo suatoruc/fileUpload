@@ -15,7 +15,7 @@ public class Robot {
     static  WebDriver driver;
 
    @Test
-   public void chromeTest() throws AWTException, InterruptedException {
+   public void RobotClass() throws AWTException, InterruptedException {
         driver=new EdgeDriver();
        driver.get("https://www.grammarly.com/plagiarism-checker");
        Actions action=new Actions(driver);
