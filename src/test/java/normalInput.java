@@ -1,7 +1,9 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -15,21 +17,13 @@ public class normalInput {
 
     @Test
     public void chromeTest() throws AWTException, InterruptedException {
-        driver=new ChromeDriver();
-
+        driver=new EdgeDriver();
         driver.get("https://the-internet.herokuapp.com/upload");
-
         Actions action=new Actions(driver);
 
-        Robot robot=new Robot();
         WebElement ut= driver.findElement(By.xpath("//input[@id='file-upload']"));
-//       JavascriptExecutor js=(JavascriptExecutor) driver;
-//       js.executeScript("arguments[0].click",ut);
-
-        Thread.sleep(3000);
         action.moveToElement(ut).pause(2000).sendKeys("/Users/suat/documents/HotelCollection.postman_collection.json").perform();
-
-        ut.sendKeys("/Users/suat/documents/HotelCollection.postman_collection.json");
+        ut.sendKeys("C:\\Users\\Suat\\IdeaProjects\\fileUpload\\src\\test\\data\\sample.pdf");
 
 
     }

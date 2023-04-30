@@ -1,21 +1,15 @@
 
-# Selenium 4.6 versiyonu ile gelen **WebDriver Manager** kullanımı,
+# Selenium Webdriver ile File upload Yöntemleri
+,
+<img src="src/test/data/Screenshot_1.png" alt="File upload">
 
->- Driver class'ında yazdığımız kod sayısını azaltacak ve bu nedenle aldıgımız hataları 
-azaltacak bir entegrasyon olan webdriver manager uygulaması ile ilgili örnek küçük bir uygulama yazıldı
->- Çalıştıgımız class yapısında bu özelligi kullanabilmek için pom.xml yapısı içinde küçük bir modifikasyon satırı 
-eklememiz gerekli arkadaşlar
-   
-     <properties>
-        <java.version>8</java.version>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <project.encoding>UTF-8</project.encoding>
-     </properties>
-pom.xml içinde properties kısmını yukarıdaki kod yapısına göre düzenlememiz yeterli arkadaşlar
 
->- Bilindigi gibi Selenium 4.6 versiyonunda webdriver manager'ın beta versiyonu yayınlandı ve 
-bu beta sürümü yanlız java 8 sürümü ile çalışıyor. bu nedenle pom.xml de versiyon kısmına
-yukarıdaki kodda görüldügü gibi java 8 yazmamız gerekiyor.
+>- Dosya yükleme işlemleri, web uygulamalarında önemli bir özelliktir ve otomasyon testleri için de oldukça önemlidir. 
+>- Selenium WebDriver, bu işlemleri kolaylaştırmak için birçok yöntem sunar. 
+>- Bunlar arasında en yaygın kullanılanları sendKeys() metodu ve setFileDetector() metodu olarak sıralanabilir. 
+>- Ayrıca, Robot sınıfı ve AutoIT aracı gibi diğer araçlar da kullanılabilir. 
+>- Bu yöntemlerin her biri farklı avantajlara sahiptir ve test senaryolarına göre seçilebilir.
+
 
 >- Umarım faydalı bir paylaşım olur.
   
